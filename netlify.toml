@@ -1,0 +1,9 @@
+# ... tu [build], [functions] y [[redirects]] ya existentes ...
+
+# CORS para el backend (Functions) sin tocar tu código
+[[headers]]
+  for = "/.netlify/functions/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Authorization, Content-Type"
